@@ -1,32 +1,10 @@
 
 <template>
   <div class="card">
-    <md-card>
+         <md-card>
       <md-card-header>
         <md-card-header-text>
-          <div class="md-title">Weather card</div>
-          <br>
-          <div class="md-subhead">Location      :</div>
-           <br>
-          <div class="md-subhead">Temperature   :</div>
-        </md-card-header-text>
-        <div class="search-box">
-          
-        </div>
-        <md-card-media md-medium>
-          <!-- <img src="/assets/logo.png" alt="People"> -->
-        </md-card-media>
-      </md-card-header>
-
-      <md-card-actions>
-        <md-button>Submit Location</md-button>
-      </md-card-actions>
-    </md-card>
-
-    <md-card>
-      <md-card-header>
-        <md-card-header-text>
-          <div class="md-title">Weather card</div>
+          <div class="md-title">Weather Lookup</div>
           <div class="md-subhead">...</div>
         </md-card-header-text>
         <input
@@ -40,9 +18,33 @@
       </md-card-header>
 
       <md-card-actions>
-        <md-button>Submit Location</md-button>
+        <md-button>Submit Search</md-button>
       </md-card-actions>
     </md-card>
+    <md-card>
+      <md-card-header>
+        <md-card-header-text>
+          <div class="md-title">Weather card</div>
+          <br>
+          <div class="md-subhead">Temperature       :</div>
+          <div class="md-subhead">Wind              :</div>
+          <div class="md-subhead">Humidity          :</div>
+          <div class="md-subhead">Rain              :</div>
+        </md-card-header-text>
+        
+        <div class="search-box">
+          
+        </div>
+        <md-card-media md-medium>
+        </md-card-media>
+      </md-card-header>
+
+      <md-card-actions>
+        <md-button>Save Report</md-button>
+      </md-card-actions>
+    </md-card>
+
+ 
   </div>
 </template>
 
@@ -54,6 +56,7 @@
   vertical-align: top;
   background-color: rgb(161, 161, 209);
 }
+
 .md-card {
   width: 500px;
   margin: 10px;
@@ -68,28 +71,25 @@
   color: #f2f2f2;
 }
 
+
 .search-box .search-bar {
   display: block;
   width: 50%;
-  padding: 5px;
+  padding: 15px;
   color: #313131;
   font-size: 20px;
   background: none;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0px 16px 0px 16px;
   transition: 0.4s;
-
+  
 }
-
 .search-box .search-bar:focus {
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 16px 0px 16px 0px;
-  position: relative;
-  text-align: center;
-
-  
 }
+
 /* 
 @media screen and (max-width: 1000px) {
   .card {
@@ -97,10 +97,5 @@
   }
 } */
 
-/* @media screen and (max-width: 620px) {
-  .card {
-    width: 80%;
-  }
-} */
 </style>
 
