@@ -11,13 +11,7 @@
           <div class="md-subhead">Temperature   :</div>
         </md-card-header-text>
         <div class="search-box">
-          <input
-            type="text"
-            class="search-bar justify-center mb-6"
-            placeholder="Search Places..."
-            v-model="query"
-            @keypress="fetchWeather"
-          />
+          
         </div>
         <md-card-media md-medium>
           <!-- <img src="/assets/logo.png" alt="People"> -->
@@ -35,6 +29,13 @@
           <div class="md-title">Weather card</div>
           <div class="md-subhead">...</div>
         </md-card-header-text>
+        <input
+            type="text"
+            class="search-bar justify-center mb-6"
+            placeholder="Search Places..."
+            v-model="query"
+            @keypress="fetchWeather"
+          />
         <div class="search-box"></div>
       </md-card-header>
 
@@ -51,7 +52,14 @@
   margin: 10px;
   display: inline-block;
   vertical-align: top;
-  background-color: blue;
+  background-color: rgb(161, 161, 209);
+}
+.md-card {
+  width: 500px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: rgb(161, 161, 209);
 }
 .card-header {
   text-align: center;
@@ -62,7 +70,7 @@
 
 .search-box .search-bar {
   display: block;
-  width: 60%;
+  width: 50%;
   padding: 5px;
   color: #313131;
   font-size: 20px;
