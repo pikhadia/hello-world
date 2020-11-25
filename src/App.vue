@@ -2,14 +2,17 @@
   <div>
     <HelloWorld msg="Home" />
     <Card />
-    <!-- <Drawer/> -->
+    <Drawer/>
+    <!-- <vue-dropdown></vue-dropdown> -->
+    <!-- <vue-dropdown :config="config"></vue-dropdown> -->
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
-// import Drawer from "./components/Drawer.vue";
+import Drawer from "./components/Drawer.vue";
 import Card from "./components/Card.vue";
+// import vueDropdown from "./components/vue-dropdown/vue-dropdown";
 
 
 export default {
@@ -17,7 +20,8 @@ export default {
   components: {
     HelloWorld,
     Card,
-    // Drawer,
+    Drawer,
+    // vueDropdown,
   },
 };
 </script>

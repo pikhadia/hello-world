@@ -5,17 +5,20 @@
       <md-card-header>
         <md-card-header-text>
           <div class="md-title">Weather card</div>
-          <div class="md-subhead">Locate Globally</div>
+          <br>
+          <div class="md-subhead">Location      :</div>
+           <br>
+          <div class="md-subhead">Temperature   :</div>
         </md-card-header-text>
-          <div class="search-box">
-        <input 
-          type="text" 
-          class="search-bar" 
-          placeholder="Search Places..."
-          v-model="query"
-          @keypress="fetchWeather"
-        />
-      </div>
+        <div class="search-box">
+          <input
+            type="text"
+            class="search-bar justify-center mb-6"
+            placeholder="Search Places..."
+            v-model="query"
+            @keypress="fetchWeather"
+          />
+        </div>
         <md-card-media md-medium>
           <!-- <img src="/assets/logo.png" alt="People"> -->
         </md-card-media>
@@ -24,26 +27,40 @@
       <md-card-actions>
         <md-button>Submit Location</md-button>
       </md-card-actions>
-    </md-card> 
+    </md-card>
+
+    <md-card>
+      <md-card-header>
+        <md-card-header-text>
+          <div class="md-title">Weather card</div>
+          <div class="md-subhead">...</div>
+        </md-card-header-text>
+        <div class="search-box"></div>
+      </md-card-header>
+
+      <md-card-actions>
+        <md-button>Submit Location</md-button>
+      </md-card-actions>
+    </md-card>
   </div>
 </template>
 
 <style scoped>
-  .md-card {
-    width: 600px;
-    margin: 4px;
-    display: inline-block;
-    vertical-align: top;
-    background-color: blue;
-  }
-   .card-header {
-   text-align: center;
-   padding: 5px 0px;
-   background: #555;
-   color: #f2f2f2;
+.md-card {
+  width: 400px;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: blue;
+}
+.card-header {
+  text-align: center;
+  padding: 5px 0px;
+  background: #555;
+  color: #f2f2f2;
+}
 
- }
- .search-box .search-bar {
+.search-box .search-bar {
   display: block;
   width: 60%;
   padding: 5px;
@@ -53,21 +70,29 @@
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 0px 16px 0px 16px;
   transition: 0.4s;
- }
- .weather-box {
-  text-align: left;
-}
- 
- @media screen and (max-width: 1000px) {
-   .card {
-     width: 75%;
-   }
- }
 
- @media screen and (max-width: 620px) {
-   .card {
-     width: 80%;
-   }
- }
+}
+
+.search-box .search-bar:focus {
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.25);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 16px 0px 16px 0px;
+  position: relative;
+  text-align: center;
+
+  
+}
+/* 
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 75%;
+  }
+} */
+
+/* @media screen and (max-width: 620px) {
+  .card {
+    width: 80%;
+  }
+} */
 </style>
 
