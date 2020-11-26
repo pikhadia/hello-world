@@ -1,13 +1,15 @@
 <template>
   <div class="page-container md-layout-column">
     <md-toolbar class="md-primary">
-      <md-button class="md-icon-button" @click="showNavigation = true">
-        <md-icon>menu</md-icon>
+      <md-button class="md-icon-button" id="menu" @click="showNavigation = true">
+        <md-icon>
+          menu 
+        </md-icon>
       </md-button>
       <span class="md-title">My Forecast</span>
 
       <div class="md-toolbar-section-end">
-        <md-button @click="showSidepanel = true">Frequent Searches</md-button>
+        <md-button id= FS @click="showSidepanel = true">Frequent Searches</md-button>
       </div>
     </md-toolbar>
 
@@ -24,16 +26,16 @@
 
         <md-list-item>
           <!-- <md-icon>place</md-icon> -->
-          <span class="md-list-item-text">Countries</span>
+          <span class="md-list-item-text">Settings</span>
         </md-list-item>
 
         <md-list-item>
-          <!-- <md-icon>delete</md-icon> -->
+          <!-- <md-icon>contact us</md-icon> -->
           <span class="md-list-item-text">Contact Us</span>
         </md-list-item>
 
         <md-list-item>
-          <!-- <md-icon>error</md-icon> -->
+          <!-- <md-icon>login/out-</md-icon> -->
           <span class="md-list-item-text">Log out</span>
         </md-list-item>
       </md-list>
@@ -48,28 +50,22 @@
       <md-list>
         <md-list-item>
           <span class="md-list-item-text">France</span>
-          <md-button class="md-icon-button md-list-action">
-          </md-button>
+          <md-button class="md-icon-button md-list-action"> </md-button>
         </md-list-item>
 
         <md-list-item>
           <span class="md-list-item-text">South Africa</span>
-          <md-button class="md-icon-button md-list-action">
-          </md-button>
+          <md-button class="md-icon-button md-list-action"> </md-button>
         </md-list-item>
 
         <md-list-item>
           <span class="md-list-item-text">Germany</span>
-          <md-button class="md-icon-button md-list-action">
-           
-          </md-button>
+          <md-button class="md-icon-button md-list-action"> </md-button>
         </md-list-item>
       </md-list>
     </md-drawer>
 
-    <md-content>
-     Under Construction
-    </md-content>
+    <md-content> Under Construction </md-content>
   </div>
 </template>
 
@@ -84,6 +80,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+#menu{
+background-color: darkcyan;
+border-radius: 0%;
+width: 100px;
+}
+.FS{
+  position: center;
+
+}
 .page-container {
   min-height: 300px;
   overflow: hidden;
@@ -91,13 +97,15 @@ export default {
   border: 1px solid rgba(#000, 0.12);
 }
 
-
 .md-drawer {
   width: 230px;
   max-width: calc(100vw - 125px);
 }
 
 .md-content {
-  padding: 16px;
+  padding: 10px;
+}
+.md-icon {
+  padding: 10px
 }
 </style>
