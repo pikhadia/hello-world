@@ -1,8 +1,8 @@
 <template>
   <div>
     <HelloWorld msg="Home" />
-    <Drawer/>
-    <Card/>
+    <Drawer />
+    <Card />
   </div>
 </template>
 
@@ -11,15 +11,12 @@ import HelloWorld from "./components/HelloWorld.vue";
 import Drawer from "./components/Drawer.vue";
 import Card from "./components/Card.vue";
 
-
-
 export default {
   name: "App",
   components: {
     HelloWorld,
     Drawer,
     Card,
-
   },
 };
 </script>
@@ -34,7 +31,7 @@ export default {
   margin-top: 60px;
 }
 #app {
-  background-image: url('./assets/cold-bg3.jpg');
+  background-image: url("./assets/cold-bg3.jpg");
   background-size: cover;
   background-position: bottom;
   transition: 0.4s;

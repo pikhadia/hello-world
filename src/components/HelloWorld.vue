@@ -1,30 +1,18 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-       
   </div>
-  
-  
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
-<script>
 
- function openNav() {
-      document.getElementById("mySidebar").style.width = "250px";
-      }      
-
-     function closeNav() {
-      document.getElementById("mySidebar").style.width = "0";
-      }
-</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

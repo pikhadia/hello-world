@@ -18,7 +18,7 @@
 
       <md-list>
         <md-list-item>
-          <!-- <md-icon>move_to_inbox</md-icon> -->
+          <!-- <md-icon>info</md-icon> -->
           <span class="md-list-item-text">Info</span>
         </md-list-item>
 
@@ -29,12 +29,12 @@
 
         <md-list-item>
           <!-- <md-icon>delete</md-icon> -->
-          <span class="md-list-item-text">Previously searched</span>
+          <span class="md-list-item-text">Contact Us</span>
         </md-list-item>
 
         <md-list-item>
           <!-- <md-icon>error</md-icon> -->
-          <span class="md-list-item-text">Contact Us</span>
+          <span class="md-list-item-text">Log out</span>
         </md-list-item>
       </md-list>
     </md-drawer>

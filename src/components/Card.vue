@@ -4,7 +4,7 @@
          <md-card>
       <md-card-header>
         <md-card-header-text>
-          <div class="md-title">Weather Lookup</div>
+          <div class="md-title">Weather Search</div>
           <div class="md-subhead">...</div>
         </md-card-header-text>
         <input
@@ -26,6 +26,7 @@
         <md-card-header-text>
           <div class="md-title">Weather card</div>
           <br>
+          <div class="md-subhead">Place             :</div>
           <div class="md-subhead">Temperature       :</div>
           <div class="md-subhead">Wind              :</div>
           <div class="md-subhead">Humidity          :</div>
